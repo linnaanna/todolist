@@ -1,0 +1,109 @@
+*  {
+ 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+ 
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+  
+}
+
+.list{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: #f0f8ff;
+}
+
+.todo-items{
+  position: center;
+  
+  width: 300px;
+}
+.list {
+  position:center;
+  
+}
+
+ul li {
+  align-content: left;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 10px;
+  background: #d7ecff;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+ul li.done {
+  background: #bde0ff;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+.addBtn {
+  cursor: pointer;
+  font-size:18px;
+  font-family:'Poppins', sans-serif;
+  width:80px;
+  height:30px;
+  border-width:1px;
+  color:black;
+  border-color:#d83526;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+  text-shadow:inset 0px 1px 0px #b23e35;
+  background:linear-gradient(#fc8d83, #e4685d);
+}
+  
+.addBtn:hover {
+  background: linear-gradient(#e4685d, #fc8d83);
+}
+
+/* Style the close button */
+.close {
+  width:16px;
+  height:16px;
+  border-style: none;
+  float:right;
+  background: url("images/whitebin.png") no-repeat;
+  
+}
+
+.close:hover {
+  background: url("images/blackbin.png") no-repeat;
+
+}
+
+
+
+footer {
+  font-size: smaller;
+}
+#activity {
+  border-width: 3px;
+}
+.wrong {
+  border: 3px white solid; 
+  animation: blink 0.5s;
+  animation-iteration-count: 3;
+}
+@keyframes blink { 50% { border-color: #ff0000; }  }
