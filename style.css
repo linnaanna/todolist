@@ -1,25 +1,22 @@
+/*general*/
 *  {
- 
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+/*Header area and big header text styling*/
 .header {
- 
   text-align: center;
   background-color: #f0f8ff;
 }
-
 
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 48px;
   text-shadow: 4px 4px 4px #aaa;
-  
 }
 
+/*list styling*/
 .list{
- 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,12 +27,11 @@ h1 {
 
 .todo-items{
   position: center;
-  
   width: 300px;
 }
+
 .list {
   position:center;
-  
 }
 
 ul li {
@@ -49,13 +45,7 @@ ul li {
   transition: 0.2s;
 }
 
-ul li.done {
-  background: #bde0ff;
-  color: #fff;
-  text-decoration: line-through;
-}
-
-
+/*Add-button styling*/
 .addBtn {
   cursor: pointer;
   font-size:18px;
@@ -78,7 +68,7 @@ ul li.done {
   background: linear-gradient(#e4685d, #fc8d83);
 }
 
-/* Style the close button */
+/* Style delete button to change colour on hover*/
 .close {
   width:16px;
   height:16px;
@@ -90,20 +80,23 @@ ul li.done {
 
 .close:hover {
   background: url("images/blackbin.png") no-repeat;
-
 }
 
-
-
+/*footer styling*/
 footer {
   font-size: smaller;
 }
+
+/*Activity box border*/
 #activity {
   border-width: 3px;
 }
+
+/*blinking border for wrong input*/
 .wrong {
   border: 3px white solid; 
   animation: blink 0.5s;
   animation-iteration-count: 3;
 }
+
 @keyframes blink { 50% { border-color: #ff0000; }  }
