@@ -28,6 +28,12 @@ function addTodo(item) {
     setTimeout(function () { element.classList.add("wrong") }, 100);
     setTimeout(function () { element.classList.remove("wrong") }, 1000);
 
+  } else if (item[0] == item[1] && item[1] == item[2]){
+    alert("Seriously?");
+    var element = document.getElementById("input");
+    setTimeout(function () { element.classList.add("wrong") }, 100);
+    setTimeout(function () { element.classList.remove("wrong") }, 1000);
+  
   } else {
 
     if (item !== '') {
@@ -46,7 +52,7 @@ function addTodo(item) {
 }
 
 
-//populate todos on screen, clear ul from class=todo-items
+//render todos on screen
 function renderTodos(todos) {
   todoItemsList.innerHTML = '';
   todos.forEach(function (item) { //go through items in todos
@@ -114,10 +120,8 @@ function deleteTodo(id) {
 
   addToLocalStorage(todos);
 }
-
 //get everything from localStorage
 getFromLocalStorage();
-
 //listen for click event in close-button and checkbox
 todoItemsList.addEventListener('click', function (event) {
   //check if the event is on checkbox and change state
