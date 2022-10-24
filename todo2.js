@@ -5,6 +5,10 @@ const todoInput = document.querySelector('.todo-input');
 
 const todoItemsList = document.querySelector('.todo-items');
 
+const allButton = document.querySelector('.showall');
+
+const unfinishedButton = document.querySelector('.showunfinished');
+
 //create array for todos
 let todos = [];
 
@@ -133,3 +137,18 @@ todoItemsList.addEventListener('click', function (event) {
     deleteTodo(event.target.parentElement.getAttribute('data-key'));
   }
 });
+
+//filtering buttons
+
+unfinishedButton.addEventListener('click', function(event) {
+  todoItemsList.innerHTML = '';
+  let unfinished = todos.filter(item => item.completed === false);
+  renderTodos(unfinished);
+  });
+
+
+allButton.addEventListener('click', function(event) {
+  todoItemsList.innerHTML = '';
+  
+  renderTodos(todos);
+  });

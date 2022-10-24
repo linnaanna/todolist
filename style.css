@@ -68,7 +68,7 @@ ul li {
   background: linear-gradient(#e4685d, #fc8d83);
 }
 
-/* Style delete button to change colour on hover*/
+/* Style delete icon to change colour on hover*/
 .close {
   width:16px;
   height:16px;
@@ -80,6 +80,37 @@ ul li {
 
 .close:hover {
   background: url("images/blackbin.png") no-repeat;
+}
+/*bottom button div*/
+.buttons {
+  text-align: center;
+  background-color: #f0f8ff;
+  padding-bottom: 20px;
+}
+/*bottom button styling*/
+.showall {
+  border-width: 1px;
+  background-color: white;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+}
+.showall:hover {
+  background-color: #d7ecff;
+}
+
+.showunfinished {
+  border-width: 1px;
+  text-align: center;
+  background-color: white;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+}
+.showunfinished:hover {
+  background-color: #d7ecff;
 }
 
 /*footer styling*/
